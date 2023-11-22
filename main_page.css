@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 200vh;
+    font-size: 20px;
+    font-family: Helvetica, Verdana, sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    
+    
+  }
+
+  html, body {
+    height: 180%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 20px 25px 20px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-out;
+    backdrop-filter: blur(8px) brightness(1.2);
+    -webkit-backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    color: white;
+    background-color: DodgerBlue	;
+    font-size: 25px;
+    font-family : "Palatino", "URW Palladio L", "serif"	;
+    font-style: oblique;
+    z-index: 1;
+    }
+  
+  
+  img {
+    width: 100%;
+    min-height: 230vh;
+    object-fit: cover;
+  }
+
+  div[id=s]{
+    transform : translateY(-410px);
+  }
+
+
+  a[id="2"] {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  a[id="2"]::before,
+  a[id="2"]::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a[id="2"]::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  a[id="2"]::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+  
+  a[id="2"]:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+
+  }
+  a[id="2"]:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  a[id="2"] span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  a[id="2"]:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+
+  a[id="2"] {
+    text-decoration: none;
+    color: #18272F;
+    font-weight: 700;
+    vertical-align: top;
+  }
+
+  a[id="2"]:hover{
+  animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+ 
+  section {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background: url(img41.jpg) no-repeat center center/cover;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    bottom: 0;
+    left: 0;
+    background: url(wave-large.png);
+    animation: move 10s linear infinite;
+  }
+  
+  .wave::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    top: 0;
+    left: 0;
+    background: url(wave-large.png);
+    opacity: 0.4;
+    animation: move-reversed 10s linear infinite;
+  }
+  .wave::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    top: 0;
+    left: 0;
+    background: url(wave-large.png);
+    opacity: 0.5;
+    animation-delay: -4s;
+    animation: move 10s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 1920px;
+    }
+  }
+  @keyframes move-reversed {
+    0% {
+      background-position: 1920px;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+
+
+  div[id="1"] {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+
+  div[id="1"]:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a[id="1"] {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a[id="1"]:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+
+div[id="container"]{
+  transform: translate(27.5%,-160px);
+}
+
+div[id="ok"]{
+  position: relative;
+  width: 600px;
+  height: 300px;
+  bottom: 0;
+  background: url(intro.png) center/cover;
+  }
+
+
+
+  
+  i:hover{
+   cursor: pointer;
+  }
+
+  .gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+}
+.gg-instagram::after,
+.gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+}
+.gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+}
+
+
+.scrolling-image {
+  width: 200px;
+  height: 120px;
+  background-image: url("img69.JPG");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transform: translateX(0); /* Déplacez l'image horizontalement (de gauche à droite ou de droite à gauche) */
+  opacity: 0.5;
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.scrolling-image.active {
+  transform: translateX(250%); /* Si vous voulez que l'image se déplace de gauche à droite */
+  opacity: 1;
+}
+
+
+.launcher {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card {
+  width: 100px; /* Largeur de la carte */
+  height: 100px; /* Hauteur de la carte */
+  background-image: url("votre-image.jpg"); /* Chemin de votre image */
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%) rotate(0deg) scale(0);
+  animation: launch 2s ease-in-out forwards;
+}
+
+@keyframes launch {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(0);
+  }
+  50% {
+      transform: translate(-50%, -50%) rotate(180deg) scale(1);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(180deg) scale(1);
+  }
+}
+
+@keyframes reverseLaunch {
+  0% {
+      transform: translate(-50%, -50%) rotate(180deg) scale(1);
+  }
+  50% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(0);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(0);
+  }
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+div[id="container"]{
+  transform: translate(12%,-160px);
+}
+}
+
+@media only screen and (max-width: 700px) {
+  div[id="container"]{
+    transform: translate(8%,-160px);  }
+  }
+
+  @media only screen and (max-width: 600px) {
+    div[id="container"]{
+      transform: translate(6%,-160px) scale(0.7); 
+  
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+
+    span,a[id="2"],a[id="1"]{
+    
+      font-size:15px;
+    }
+
+    div[id="container"]{
+      transform: translateY(-160px) scale(0.4); 
+  
+    }
+    
+  }
+
+

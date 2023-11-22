@@ -1,0 +1,29 @@
+
+
+.parallax__layer--back::before{
+    content: "";
+    background-image: url(img36.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.60;
+    z-index: 1;
+    
+}
+
+.parallax__layer--fore::before{
+    content: "";
+    background-image: url(img36.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.50;
+    z-index: -1;
+
+}

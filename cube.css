@@ -1,0 +1,242 @@
+* { box-sizing: border-box; }
+
+body { 
+font-family: sans-serif;
+width: 100%;
+overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+
+}
+
+
+.cube {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+  position: relative;
+}
+
+div[id="ok"]{
+float: center;
+transform: translateX(-27%);
+}
+
+
+
+.cube.show-front  { transform: translateZ(-100px) rotateY( 0deg) ; }
+.cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+
+
+.cube__face--front  { transform: rotateY( 0deg) translateZ(100px) ; }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(100px) ; }
+.cube__face--back   { transform: rotateY(180deg) translateZ(100px) ; }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(100px) ; }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(100px) ; }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(100px)  ; }
+
+label { 
+margin-right: 10px;
+transform: translate(20px,30px);
+
+}
+
+
+
+img{
+    width: 200px;
+    height: 200px;
+    transform: translate(2px,2px);
+}
+
+
+.hero {
+  position: relative; 
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-8px);
+}
+
+.hero::before {    
+    content: "";
+    background-image: url(img39.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.65;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 20px 25px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s ease-out;
+  backdrop-filter: blur(8px) brightness(1.2);
+  -webkit-backdrop-filter: blur(8px) brightness(1.2);
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  color: white;
+  background-color: DodgerBlue	;
+  font-size: 25px;
+  font-family : "Palatino", "URW Palladio L", "serif"	;
+  font-style: oblique;
+  z-index: 1;
+  }
+
+  
+  div[id="1"] {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+
+  div[id="1"]:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a[id="1"] {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .dropdown-content a[id="1"]:hover {
+    color: #FFFFFF;
+    background-color: #11191a;
+  }
+
+  span:hover{
+    filter: brightness(200%);
+    color : red;
+    text-shadow: 0px 0px 15px black;
+}
+
+#bulbImg {
+  width: 200px;
+  margin: 40px;
+  transform:scale(0.35) translate(-505px,-100px) ;
+  float: right;
+}
+
+
+
+
+
+img[id="bulbImg"]{
+  border-radius: 25% 10%;
+  border: 9px solid; 
+  border-color:black;
+  padding: 10px;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),  
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+
+
+#scene{
+  margin-top : 250px;
+  margin-left: 200px;
+}
+
+@media only screen and (max-width: 730px) {
+
+  #radio-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+.hero{
+  height:120vh;
+}
+
+#scene{
+  transform: translateY(-50px);
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  
+  #scene{
+    transform: translateY(-50px);
+    margin-left: 170px;
+  }
+
+
+  
+}
+
+@media only screen and (max-width: 490px) {
+
+  div[id="s"]{
+    transform: translate(110px,-25px)
+  }
+  
+  #scene{
+    transform: translateY(-50px);
+    margin-left: 130px;
+  }
+
+ 
+  
+}
+
+@media only screen and (max-width: 450px) {
+
+  #scene{
+    margin-left: 80px;
+  }
+
+  div[id="ok"]{
+    float: center;
+    transform: translateX(-10%);
+    }
+
+  span,a[id="2"],a[id="1"]{
+  
+    font-size:15px;
+  }
+  
+}
