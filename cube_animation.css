@@ -535,7 +535,7 @@ body{
 
   .hero::before {    
     content: "";
-    background-image: url(img36.jpg);
+    background-image: url(img36.JPG);
     background-size: cover;
     position: absolute;
     top: 0px;

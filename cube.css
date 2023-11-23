@@ -83,7 +83,7 @@ img{
 
 .hero::before {    
     content: "";
-    background-image: url(img39.jpg);
+    background-image: url(img39.JPG);
     background-size: cover;
     position: absolute;
     top: 0px;
