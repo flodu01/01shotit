@@ -210,7 +210,7 @@ body::-webkit-scrollbar {
 
   .hero::before {    
     content: "";
-    background-image: url(img38.jpg);
+    background-image: url(img38.JPG);
     background-size: cover;
     position: absolute;
     top: 0px;
