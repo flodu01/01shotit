@@ -8,7 +8,6 @@ overflow: hidden;
 
 html, body {
   height: 100%;
-
 }
 
 
@@ -153,7 +152,7 @@ nav {
 #bulbImg {
   width: 200px;
   margin: 40px;
-  transform:scale(0.35) translate(-505px,-100px) ;
+  transform:scale(0.35) translate(-505px,-140px) ;
   float: right;
 }
 
