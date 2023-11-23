@@ -227,7 +227,7 @@ body {
   z-index: 5; /* slide over group 2 */
 }
 #group1 .parallax__layer--base {
-  background-image: url(img45.jpg);
+  background-image: url(img45.JPG);
   background-size: cover;
 }
 
@@ -248,7 +248,7 @@ body {
 }
 
 #group5 .parallax__layer--fore {
-  background: url(img47.jpg);
+  background: url(img47.JPG);
   background-size: cover;
 
 }
@@ -275,12 +275,12 @@ body {
 
 
 .parallax__layer--back{
-  background-image: url(img42.jpg);
+  background-image: url(img42.JPG);
   background-size: cover;
 }
 
 .parallax__layer--fore{
-  background-image: url(img44.jpg);
+  background-image: url(img44.JPG);
   background-size: cover;
 
 }
