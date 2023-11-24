@@ -23,13 +23,13 @@ document.getElementById("10").addEventListener("click", function () {
 	}
 	else {
 		document.getElementById("7").style.backgroundColor = "none";
-		document.getElementById("7").style.backgroundImage = "url(img45.jpg)";
+		document.getElementById("7").style.backgroundImage = "url(img45.JPG)";
 		document.getElementById("6").style.backgroundColor = "none";
-		document.getElementById("6").style.backgroundImage = "url(img42.jpg)";
+		document.getElementById("6").style.backgroundImage = "url(img42.JPG)";
 		document.getElementById("5").style.backgroundColor = "none";
-		document.getElementById("5").style.backgroundImage = "url(img44.jpg)";
+		document.getElementById("5").style.backgroundImage = "url(img44.JPG)";
 		document.getElementById("4").style.backgroundColor = "none";
-		document.getElementById("4").style.backgroundImage = "url(img42.jpg)";
+		document.getElementById("4").style.backgroundImage = "url(img42.JPG)";
 
 		document.getElementById("20").style.backgroundColor = "none";
 		document.getElementById("20").style.backgroundImage = "url(img55.jpg)";
@@ -38,7 +38,7 @@ document.getElementById("10").addEventListener("click", function () {
 		document.getElementById("22").style.backgroundColor = "none";
 		document.getElementById("22").style.backgroundImage = "url(img46.jpg)";
 		document.getElementById("23").style.backgroundColor = "none";
-		document.getElementById("23").style.backgroundImage = "url(img47.jpg)";
+		document.getElementById("23").style.backgroundImage = "url(img47.JPG)";
         state=0;
 	}
 })
