@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,user-scalable=yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Carrousel 3D</title>
   <link rel="stylesheet" href="cube.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
+
+<body>
 
 <header>
 
@@ -45,9 +46,7 @@
 
 </header>
 
-<body>
-
-  <div class="hero" style="margin-left: 7.8px;">
+  <div class="hero">
 
     <div id="scene">
       <div class="cube">
@@ -61,7 +60,7 @@
 
       </div>
 
-      <div class="radio-group"  id="ok" style="align-items: center;">
+      <div class="radio-group" id="ok" role="radiogroup" aria-label="Face du cube">
         <label>
           <input type="radio" name="rotate-cube-side" value="front" checked /> Avant
         </label>
@@ -94,10 +93,7 @@
   </div>
   
 
-</body>
-
-
-
 <script src="cube.js"></script>
+</body>
 
 </html>
