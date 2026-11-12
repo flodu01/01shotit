@@ -141,37 +141,6 @@ nav {
   z-index: 1;
   }
 
-.nav-dropdown {
-    position: relative;
-}
-
-.nav-dropdown__menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    min-width: 140px;
-    background: white;
-}
-
-.nav-dropdown:hover .nav-dropdown__menu,
-.nav-dropdown:focus-within .nav-dropdown__menu {
-    display: block;
-}
-
-.nav-dropdown__menu a {
-    display: block;
-    padding: 8px 12px;
-    color: #222;
-    text-decoration: none;
-}
-
-.nav-dropdown__menu a:hover {
-    background: #eee;
-}
-
   
   div[id="1"] {
     display: inline-block;
